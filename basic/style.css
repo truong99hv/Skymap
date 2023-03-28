@@ -1,0 +1,47 @@
+* {
+  box-sizing: border-box;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 40px;
+  color: blue;
+}
+
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  background-color: #2196f3;
+  padding: 10px;
+  gap: 10px;
+  border-radius: 10px;
+}
+
+@media (max-width: 600px) {
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.box {
+  background-color: #2196f3;
+  margin-top: 100px;
+  height: 200px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.box img {
+  width: 160px;
+}
