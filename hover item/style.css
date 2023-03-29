@@ -1,0 +1,22 @@
+.box {
+  width: 100px;
+  height: 108px;
+  border: 1px solid red;
+  transition: all 0.08s linear;
+}
+
+.box:hover {
+  transform: translateY(-3px);
+  box-shadow: 5px 10px 10px blue;
+}
+
+.box:hover .logo {
+}
+
+.logo {
+  width: 45px;
+  height: 45px;
+  background-image: url(https://cf.shopee.vn/file/e4a404283b3824c211c1549aedd28d5f_xhdpi);
+  background-size: contain;
+  background-repeat: no-repeat;
+}

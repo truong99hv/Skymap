@@ -1,0 +1,86 @@
+#footer {
+  background-color: #fbfbfb;
+}
+
+.contact {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  padding-bottom: 30px;
+}
+
+.contact h2 {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: rgba(0, 0, 0, 0.87);
+  margin-bottom: 1.25rem;
+  margin-top: 2.5rem;
+}
+
+.contact a {
+  color: rgba(0, 0, 0, 0.65);
+  font-size: 0.75rem;
+}
+
+.contact a:hover {
+  color: #ee4d2d;
+}
+
+.list-card-pay,
+.list-card-transport {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5px;
+  padding-right: 30px;
+}
+
+.list-card-pay .card-pay,
+.list-card-transport .card-transport {
+  text-align: center;
+  width: 3.75rem;
+  height: 1.875rem;
+  margin-bottom: 0.5rem;
+  margin-right: 0.5rem;
+  padding: 0.25rem;
+  background-color: #fff;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+  box-sizing: border-box;
+  overflow: hidden;
+  border-radius: 0.125rem;
+}
+
+.follow li {
+  font-size: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.follow li span {
+  margin-right: 10px;
+}
+
+.form-dowload {
+  display: flex;
+  /* justify-content: space-between; */
+}
+
+.QR {
+  height: 5rem;
+  width: 5rem;
+  margin-right: 0.75rem;
+  padding: 0.25rem;
+  background-color: #fff;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 2px;
+}
+
+.app {
+  margin-top: 7px;
+}
+
+.app img {
+  width: 4.25rem;
+  height: 1rem;
+  margin-bottom: 0.5rem;
+  background-color: #fff;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 2px;
+}
