@@ -1,0 +1,8 @@
+Array: 
+1. pop(): loại bỏ phần tử cuối cùng khỏi một mảng và trả về phần tử đó.
+
+2.shift(): loại bỏ phần tử đầu tiên khỏi một mảng và trả về phần tử đã loại bỏ đó.
+
+3.push(): thêm một hoặc nhiều phần tử vào cuối mảng và trả về độ dài mới của mảng.
+
+3.unshift(): thêm một hoặc nhiều phần tử vào đầu mảng và trả về độ dài mới của mảng.

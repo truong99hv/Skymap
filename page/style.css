@@ -1,0 +1,45 @@
+body {
+  background-image: linear-gradient(to top right, #cc64a2, #5c3075);
+  min-height: 100vh;
+  line-height: 20px;
+  font-family: monospace;
+}
+
+table,
+th,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  border: 2px solid;
+}
+
+.container {
+  width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.pagination {
+  width: 100%;
+}
+
+.pagination .table {
+  width: 100%;
+}
+
+.listPage {
+  padding: 10px;
+  text-align: center;
+  list-style: none;
+}
+.listPage li {
+  background-color: #ffffffbd;
+  padding: 20px;
+  display: inline-block;
+  margin: 0 10px;
+  cursor: pointer;
+}
+.listPage .active {
+  background-color: #b192ef;
+  color: #fff;
+}
