@@ -10,12 +10,29 @@
   <body>
     <div class="container">
       <h1>Danh sách sinh viên</h1>
+      <div class="form-field">
+        <label for="search"></label>
+        <input
+          type="text"
+          name="search"
+          id="myInput"
+          onkeyup="search()"
+          placeholder="search"
+        />
+      </div>
+      <!-- <button onclick="sortTable(0)" class="btn btn-sort">
+        Sắp xếp theo bảng chữ cái
+      </button> -->
+      <button onclick="sortTableAZ()" class="btn btn-sort">A - Z</button>
+      <button onclick="sortTableZA()" class="btn btn-sort">Z - A</button>
       <div class="pagination">
-        <table class="table" class="tbale"></table>
+        <table class="table"></table>
 
         <ul class="listPage"></ul>
       </div>
     </div>
-    <script src="main.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/search.js"></script>
+    <script src="./js/sort.js"></script>
   </body>
 </html>

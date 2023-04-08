@@ -43,3 +43,17 @@ td {
   background-color: #b192ef;
   color: #fff;
 }
+
+.form-field {
+  margin: 20px 0;
+}
+
+input {
+  width: 100%;
+  outline: none;
+}
+
+.btn-sort {
+  float: left;
+  margin: 20px;
+}

@@ -1,0 +1,70 @@
+table,
+th,
+td {
+  border: 1px solid;
+  border-collapse: collapse;
+}
+
+.container {
+  width: 900px;
+  margin: 0 auto;
+}
+
+.table {
+  margin: 20px 0;
+  width: 100%;
+  text-align: center;
+}
+
+.list-page {
+  margin-top: 20px;
+}
+
+select {
+  outline: none;
+}
+
+.page {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.pagination {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.pagination a {
+  text-decoration: none;
+}
+
+.pagination > li > a {
+  position: relative;
+  float: left;
+  padding: 6px 12px;
+  margin-left: -1px;
+  line-height: 1.42857143;
+  color: #337ab7;
+  text-decoration: none;
+  background-color: #fff;
+  border: 1px solid #ddd;
+}
+
+.pagination > .active > a {
+  z-index: 2;
+  color: #fff;
+  cursor: default;
+  background-color: #337ab7;
+  border-color: #337ab7;
+}
+
+.pagination > .disabled > a,
+.pagination > .disabled > a:hover {
+  color: #777;
+  cursor: not-allowed;
+  background-color: #fff;
+  border-color: #ddd;
+}

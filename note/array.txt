@@ -6,3 +6,5 @@ Array:
 3.push(): thêm một hoặc nhiều phần tử vào cuối mảng và trả về độ dài mới của mảng.
 
 3.unshift(): thêm một hoặc nhiều phần tử vào đầu mảng và trả về độ dài mới của mảng.
+
+4.8 loại dữ liệu: Boolean, Null, Undefined, Number, String, Symbol, BigInt, Object
