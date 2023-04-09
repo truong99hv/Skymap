@@ -1,0 +1,184 @@
+{
+  "student": [
+    {
+      "name": "Nguyen Van A",
+      "age": 20,
+      "birth": "01/01/2002",
+      "class": "Th24.12"
+    },
+    {
+      "name": "Tran Thi B",
+      "age": 21,
+      "birth": "02/02/2001",
+      "class": "Th24.13"
+    },
+    {
+      "name": "Le Van C",
+      "age": 22,
+      "birth": "03/03/2000",
+      "class": "Th24.14"
+    },
+    {
+      "name": "Dinh Bo Linh",
+      "age": 23,
+      "birth": "03/03/2000",
+      "class": "Th24.15"
+    },
+    {
+      "name": "Tran Van Tuan",
+      "age": 24,
+      "birth": "03/03/2000",
+      "class": "Th24.16"
+    },
+    {
+      "name": "Hoang Van Truong",
+      "age": 24,
+      "birth": "02/02/1999",
+      "class": "Th24.11"
+    },
+    {
+      "name": "Thomas Tuchel",
+      "age": 49,
+      "birth": "29/08/1973",
+      "class": "Th24.13"
+    },
+    {
+      "name": "Pep Guardiola",
+      "age": 52,
+      "birth": "18/01/1971",
+      "class": "Th24.12"
+    },
+    {
+      "name": "Jürgen Klopp",
+      "age": 55,
+      "birth": "16/06/1967",
+      "class": "Th24.15"
+    },
+    {
+      "name": "José Mário ",
+      "age": 60,
+      "birth": "26/01/1963",
+      "class": "Th24.16"
+    },
+    {
+      "name": "Carlo Ancelotti",
+      "age": 63,
+      "birth": "10/06/1959",
+      "class": "Th24.12"
+    },
+    {
+      "name": "Luis Enrique",
+      "age": 52,
+      "birth": "08/05/1970",
+      "class": "Th24.13"
+    },
+    {
+      "name": "Antonio Conte",
+      "age": 53,
+      "birth": "31/07/1969",
+      "class": "Th24.14"
+    },
+    {
+      "name": "Graham Potter",
+      "age": 47,
+      "birth": "20/05/1975",
+      "class": "Th24.15"
+    },
+    {
+      "name": "Julian Nagelsmann",
+      "age": 35,
+      "birth": "23/07/1987",
+      "class": "Th24.16"
+    },
+    {
+      "name": "Fabrizio Romano",
+      "age": 30,
+      "birth": "21/02/1993",
+      "class": "Th24.12"
+    },
+    {
+      "name": "Enzo Fernández",
+      "age": 22,
+      "birth": "17/01/2001",
+      "class": "Th24.13"
+    },
+    {
+      "name": "Mykhaylo Mudryk",
+      "age": 22,
+      "birth": "05/01/2001",
+      "class": "Th24.14"
+    },
+    {
+      "name": "João Félix",
+      "age": 23,
+      "birth": "10/11/1999",
+      "class": "Th24.15"
+    },
+    {
+      "name": "Noni Madueke",
+      "age": 21,
+      "birth": "19/03/2002",
+      "class": "Th24.16"
+    },
+    {
+      "name": "Malo Gusto",
+      "age": 19,
+      "birth": "19/05/2003",
+      "class": "Th24.12"
+    },
+    {
+      "name": "Andrey Santos",
+      "age": 18,
+      "birth": "03/05/2004",
+      "class": "Th24.13"
+    },
+    {
+      "name": "Benoît Badiashile",
+      "age": 22,
+      "birth": "26/03/2001",
+      "class": "Th24.14"
+    },
+    {
+      "name": "Wesley Fofana",
+      "age": 20,
+      "birth": "17/12/2000",
+      "class": "Th24.15"
+    },
+    {
+      "name": "Omari Hutchinson",
+      "age": 19,
+      "birth": "29/10/2003",
+      "class": "Th24.16"
+    },
+    {
+      "name": "Carney Chukwuemeka",
+      "age": 19,
+      "birth": "20/10/2003",
+      "class": "Th24.12"
+    },
+    {
+      "name": "Marc Cucurella",
+      "age": 24,
+      "birth": "22/07/1998",
+      "class": "Th24.13"
+    },
+    {
+      "name": "Conor Gallagher",
+      "age": 23,
+      "birth": "06/02/2000",
+      "class": "Th24.14"
+    },
+    {
+      "name": "Lewis Hall",
+      "age": 18,
+      "birth": "08/09/2004",
+      "class": "Th24.15"
+    },
+    {
+      "name": "Kai Havertz",
+      "age": 23,
+      "birth": "11/06/1999g",
+      "class": "Th24.16"
+    }
+  ]
+}

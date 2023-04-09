@@ -7,4 +7,14 @@ Array:
 
 3.unshift(): thêm một hoặc nhiều phần tử vào đầu mảng và trả về độ dài mới của mảng.
 
-4.8 loại dữ liệu: Boolean, Null, Undefined, Number, String, Symbol, BigInt, Object
+4.8 loại dữ liệu: Boolean, Null, Undefined, Number, String, Symbol, BigInt, Object.
+
+5.replace(): Thay thế phần tử trong string
+
+6.charAt(): Trả về phần tử trong chuỗi.
+
+7.filter(): tạo một mảng mới bao gồm tất cả các phần tử vượt qua phép kiểm tra được thực hiện bởi hàm callback().
+
+8.find(): sẽ trả về giá trị của phần tử đầu tiên dựa trên điều kiện đã cho và trả về không xác định nếu không có phần tử nào vượt qua điều kiện.
+
+9.findIndex():  sẽ trả về chỉ mục index) của phần tử đầu tiên dựa trên điều kiện và trả về -1 nếu không có phần tử nào vượt qua điều kiện.
