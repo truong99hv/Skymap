@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"
+      integrity="sha512-dfX5uYVXzyU8+KHqj8bjo7UkOdg18PaOtpa48djpNbZHwExddghZ+ZmzWT06R5v6NSk3ZUfsH6FNEDepLx9hPQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <style>
+      table,
+      th,
+      td {
+        border: 1px solid;
+        border-collapse: collapse;
+      }
+
+      .container {
+        width: 900px;
+        margin: 0 auto;
+      }
+
+      .table {
+        margin: 20px 0;
+        width: 100%;
+        text-align: center;
+      }
+
+      .list-page {
+        margin-top: 20px;
+      }
+
+      select {
+        outline: none;
+      }
+
+      .page {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .pagination {
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .pagination a {
+        text-decoration: none;
+      }
+
+      .pagination > li > a {
+        position: relative;
+        float: left;
+        padding: 6px 12px;
+        margin-left: -1px;
+        line-height: 1.42857143;
+        color: #337ab7;
+        text-decoration: none;
+        background-color: #fff;
+        border: 1px solid #ddd;
+      }
+
+      .pagination > .active > a {
+        z-index: 2;
+        color: #fff;
+        cursor: default;
+        background-color: #337ab7;
+        border-color: #337ab7;
+      }
+
+      .pagination > .disabled > a,
+      .pagination > .disabled > a:hover {
+        color: #777;
+        cursor: not-allowed;
+        background-color: #fff;
+        border-color: #ddd;
+      }
+
+      .hide {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <table id="myTable">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Name</th>
+          <th>Email</th>
+          <th>City</th>
+          <th>Company</th>
+        </tr>
+      </thead>
+      <tbody id="tableBody"></tbody>
+
+      <div class="page">
+        <label for="">Hiển thị</label>
+        <select class="per-page" onchange="papinator()">
+          <option value="5">5</option>
+          <option value="10">10</option>
+          <option value="15">15</option>
+        </select>
+        <div id="info-paginator"></div>
+        <ul class="pagination"></ul>
+      </div>
+    </table>
+    <button id="export-csv-btn">CSV</button>
+    <input type="text" id="searchInput" placeholder="Search..." />
+    <button onclick="sortData(1)">Sort by ID</button>
+    <button onclick="sortData(2,'asc')">Sort by Name</button>
+    <button onclick="sortData(3,'asc')">Sort by Email</button>
+    <button onclick="sortData(4,'asc')">Sort by City</button>
+    <button onclick="sortData(5,'asc')">Sort by Company</button>
+
+    <div class="input-change">
+      <input type="text" placeholder="name" class="name-input" />
+      <input type="email" placeholder="email" class="email-input" />
+      <input type="text" placeholder="city" class="city-input" />
+      <input type="text" placeholder="company" class="company-input" />
+
+      <button class="add">Add</button>
+    </div>
+    <script src="main.js" type="module"></script>
+  </body>
+</html>

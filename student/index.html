@@ -16,16 +16,15 @@
   </head>
   <body>
     <div class="container">
-      <input type="text" name="search" id="myInput" placeholder="search" />
-      <button class="btn btn-search" onclick="testSearch()">Search</button>
+      <input type="text" name="search" id="searchInput" placeholder="search" />
 
       <div class="list-page">
-        <label for="">Hiển thị</label>
+        <!-- <label for="">Hiển thị</label>
         <select class="per-page" onchange="papinator()">
           <option value="5">5</option>
           <option value="10">10</option>
           <option value="15">15</option>
-        </select>
+        </select> -->
         <table class="table"></table>
 
         <div class="page">
@@ -33,7 +32,15 @@
           <ul class="pagination"></ul>
         </div>
       </div>
+
+      <div class="input-change">
+        <input type="text" placeholder="name" class="name-input" />
+        <input type="number" placeholder="age" class="age-input" />
+        <input type="text" placeholder="class" class="class-input" />
+
+        <button class="add">Add</button>
+      </div>
     </div>
-    <script src="main.js"></script>
+    <script src="main.js" type="module"></script>
   </body>
 </html>

@@ -1,3 +1,6 @@
+import { arr } from "./index.js";
+
+console.log(arr);
 // làm 3 hàm:
 /*
     hàm getdata
@@ -187,58 +190,40 @@ var data = [
   },
 ];
 
-// console.log(data[0].name.toLowerCase());
-// console.log(data[0].name);
-// console.log(typeof data[0].age);
-function getData(val) {
-  let result = [];
-  // result = data;
-  // console.log(result);
-  // if(search != undefined){
-  //     // loc trong mảng dư lieu tra ve cac phan tu thoa man
-  //     for(data ){
-  //         result.push (item);
-  //     }
-  // }
-  let element = "";
-  if (val) {
-    for (let i = 0; i < val.lenght; i++) {
-      result.push(val[i]);
-    }
-  } else {
-    element += "<h2>Danh sách trống</h2>";
-  }
+// function getData(val) {
+//   let result = [];
 
-  for (let i = 0; i < result.length; i++) {
-    element +=
-      "<tr>" +
-      "<td>" +
-      (i + 1) +
-      "</td>" +
-      "<td>" +
-      result[i].name +
-      "</td>" +
-      "<td>" +
-      result[i].age +
-      "</td>" +
-      "<td>" +
-      result[i].class +
-      "</td>" +
-      "</tr>";
-  }
+//   let element = "";
+//   if (val) {
+//     for (let i = 0; i < val.lenght; i++) {
+//       result.push(val[i]);
+//     }
+//   } else {
+//     element += "<h2>Danh sách trống</h2>";
+//   }
 
-  document.getElementsByTagName("table").innerHTML = element;
+//   for (let i = 0; i < result.length; i++) {
+//     element +=
+//       "<tr>" +
+//       "<td>" +
+//       (i + 1) +
+//       "</td>" +
+//       "<td>" +
+//       result[i].name +
+//       "</td>" +
+//       "<td>" +
+//       result[i].age +
+//       "</td>" +
+//       "<td>" +
+//       result[i].class +
+//       "</td>" +
+//       "</tr>";
+//   }
 
-  // sort
-  // if (sort) {
-  //   // sap xep cai mang result truoc khi tra ve
-  // }
+//   document.getElementsByTagName("table").innerHTML = element;
 
-  console.log(val);
-  console.log(result);
-  testSearch();
-  return result;
-}
+//   return result;
+// }
 
 function showData(students) {
   // lat tbody
@@ -270,6 +255,8 @@ function showData(students) {
               <td>${student.name}</td>
               <td>${student.age}</td>
               <td>${student.class}</td>
+             
+
           </tr>
     `;
     });
@@ -277,9 +264,7 @@ function showData(students) {
   table.innerHTML += element;
 
   // phan trang
-  papinator(1);
-
-  getData(testSearch());
+  papinator();
 }
 
 showData(data);
@@ -394,12 +379,6 @@ function papinator(currentPage = 1) {
     total;
 
   var txt = "";
-  // "<tr>" +
-  // "<th>ID</th>" +
-  // "<th>Name</th>" +
-  // "<th>Age</th>" +
-  // "<th>Class</th>" +
-  // "</tr>";
 
   for (let i = minIndexShow; i < maxIndexShow; i++) {
     txt +=
@@ -416,6 +395,10 @@ function papinator(currentPage = 1) {
       "<td>" +
       result[i].class +
       "</td>" +
+      "<td>" +
+      "<button class='eidt' >Edit</button>" +
+      "<button class='delete' >Delete</button>" +
+      "</td>" +
       "</tr>";
   }
 
@@ -423,27 +406,70 @@ function papinator(currentPage = 1) {
   document.getElementsByTagName("tbody")[0].innerHTML = txt;
 }
 
-function search(key, value, arr) {
-  let result = [];
-  for (let i = 0; i < arr.length; i++) {
-    if (arr[i][key].toLowerCase() === value) {
-      result.push(arr[i]);
+var searchInput = document.getElementById("searchInput");
+var tableBody = document.getElementsByTagName("tbody");
+var page = document.querySelector(".page");
+
+function searchData() {
+  const filter = searchInput.value.toUpperCase();
+  const rows = document.getElementsByTagName("tr");
+  for (let i = 0; i < rows.length; i++) {
+    const columns = rows[i].getElementsByTagName("td");
+    let isMatch = false;
+    for (let j = 0; j < columns.length; j++) {
+      const value = columns[j].innerText.toUpperCase();
+      if (value.indexOf(filter) > -1) {
+        isMatch = true;
+        break;
+      }
+    }
+
+    // if (searchInput === "") {
+    //   page.style.display = "";
+    // } else {
+    //   page.style.display = "none";
+    // }
+
+    if (isMatch) {
+      rows[i].style.display = "";
+    } else {
+      rows[i].style.display = "none";
     }
   }
-  // console.log("arr: ", result);
-  // console.log(value);
-  return result;
 }
 
-function testSearch() {
-  let value = document.querySelector("#myInput").value;
-  let filter = value.toLowerCase();
+searchInput.addEventListener("keyup", searchData);
 
-  if (filter != "") {
-    search("name", filter, data);
-    // search("age", value, data);
-    // search("class", filter, data);
+const add = document.querySelector(".add");
+function addData() {
+  const nameInput = document.querySelector(".name-input");
+  const ageInput = document.querySelector(".age-input");
+  const classInput = document.querySelector(".class-input");
+  if (nameInput === "" || ageInput === "" || classInput === "") {
+    alert("vui lòng điền đầy đủ thông tin !!!");
   }
+  // console.log(data);
+  let id = data.length + 1;
+  let newUser = {
+    id: id,
+    name: nameInput.value,
+    age: ageInput.value,
+    class: classInput.value,
+  };
 
-  // console.log(filter);
+  // let index = data.findIndex((c) => c.id == data.id);
+  // if (index >= 0) {
+  //   data.splice(index, 1, newUser);
+  // } else {
+  //   data.push(newUser);
+  // }
+
+  nameInput.value = "";
+  ageInput.value = "";
+  classInput.value = "";
+  data.push(newUser);
+  console.log(data);
+  showData(data);
+  papinator(1);
 }
+add.addEventListener("click", addData);
