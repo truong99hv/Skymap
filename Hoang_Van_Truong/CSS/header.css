@@ -1,0 +1,136 @@
+.banner-top {
+  background-color: rgba(138, 115, 80);
+  color: #fff;
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  height: 44px;
+  align-items: center;
+  font-weight: 500;
+}
+
+.content-banner-top {
+  display: flex;
+}
+
+.banner-top .learn-more {
+  text-decoration: underline;
+  margin-left: 10px;
+}
+.header-content {
+  background-color: #0e0c0c;
+  display: flex;
+}
+
+.header-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 80px;
+}
+
+.header-content .navbar {
+  display: flex;
+}
+
+.header-content .navbar .list-nav {
+  display: flex;
+  align-items: center;
+}
+
+.header-content .navbar .logo-nav img {
+  width: 32px;
+  height: 32px;
+}
+
+.header-content .navbar .list-nav .item-nav a {
+  color: #fff;
+  margin: 0 10px;
+}
+
+.search {
+  height: 44px;
+  width: 212px;
+  position: relative;
+  background-color: #0e0c0c;
+  align-items: center;
+  border: 0.5px solid #ebe5e5;
+}
+
+.search .icon-search {
+  color: #fff;
+  position: absolute;
+  top: 30%;
+  left: 10px;
+}
+
+.search .input-search {
+  height: 100%;
+  outline: none;
+  background-color: #0e0c0c;
+  align-items: center;
+  padding-left: 20px;
+  float: right;
+  border: none;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+  width: 25%;
+  justify-content: space-between;
+}
+
+.icon-header-user {
+  display: flex;
+  justify-content: space-between;
+  width: 30%;
+}
+
+.icon-header-user i {
+  color: #fff;
+}
+
+.banner-bottom {
+  background-color: rgb(227, 176, 176);
+  text-align: center;
+  padding: 20px 0;
+}
+
+.banner-bottom .title-banner-bottom {
+  font-size: 20px;
+  line-height: 1.4;
+  font-weight: 700;
+}
+
+.banner-bottom .explore {
+  font-size: 14px;
+  line-height: 1.428;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+.banner-bottom .text-banner-bottom {
+  font-size: 12px;
+  line-height: 1.333;
+  margin-top: 0.25rem;
+}
+
+.btn-get-off {
+  position: fixed;
+  bottom: 20px;
+  left: 24px;
+  color: #0e0c0c;
+  background-color: #ebe5e5;
+  padding: 10px 40px;
+  border: 1px solid #0e0c0c;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.btn-get-off:hover {
+  opacity: 0.8;
+}

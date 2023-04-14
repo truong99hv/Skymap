@@ -1,0 +1,193 @@
+.banner-main-top {
+  /* height: 543px; */
+  position: relative;
+}
+
+.banner-main-top img {
+  height: 100%;
+  object-fit: cover;
+}
+
+.decs-banner-main-top {
+  position: absolute;
+  top: 40%;
+  left: 20px;
+  /* text-align: left; */
+  color: #fff;
+  width: 50%;
+}
+
+.decs-banner-main-top h1 {
+  font-weight: 700px;
+  display: block;
+  margin-bottom: 20px;
+  width: 400px;
+}
+
+.decs-banner-main-top h2 {
+  font-weight: 200;
+  left: 0px;
+  margin-top: 10px;
+}
+
+.shop-banner-main-top {
+  position: absolute;
+  top: 100px;
+}
+
+.shop-banner-main-top a {
+  color: #fff;
+  height: 40px;
+  background-color: black;
+  padding: 15px 20px;
+  margin-right: 10px;
+}
+
+.banner-main-bottom {
+  margin-top: 25px;
+  position: relative;
+}
+
+.decs-banner-main-bottom {
+  position: absolute;
+  right: 0;
+  top: 40%;
+  /* width: 50%; */
+  color: #000;
+}
+
+.decs-banner-main-bottom h1 {
+  font-weight: 700px;
+  display: block;
+  margin-bottom: 20px;
+  width: 400px;
+  left: 100px;
+  text-shadow: 1px 3px 1px #d1baba;
+}
+
+.decs-banner-main-bottom h2 {
+  font-weight: 200;
+  /* position: absolute; */
+  /* margin-top: 25px; */
+  left: 0px;
+  margin-top: 10px;
+  text-shadow: 1px 1px 1px #fff;
+}
+.shop-banner-main-bottom {
+  position: absolute;
+  top: 100px;
+}
+
+.shop-banner-main-bottom a {
+  color: #fff;
+  height: 40px;
+  background-color: black;
+  padding: 15px 20px;
+  margin-right: 10px;
+}
+
+.product {
+  margin-top: 40px;
+  border-bottom: 1px solid #ccc;
+}
+
+.list-product {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.decs-item-product {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  color: #000;
+  padding-bottom: 40px;
+}
+.decs-item-product .name-title-product {
+  padding-right: 1.25rem;
+  overflow: hidden;
+  text-align: left;
+  font-weight: 700;
+}
+
+.decs-item-product .price-product {
+  font-weight: 600;
+}
+
+.season-product {
+  margin-top: 50px;
+  text-align: center;
+}
+.season-product .title-season {
+  font-size: 32px;
+  line-height: 1.125;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.season-product .decs-title-season {
+  margin-bottom: 20px;
+}
+
+.shop-season {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+
+.shop-season .men-season .link-shop-season button {
+  padding: 10px 70px;
+  background-color: #000;
+  border: none;
+  color: #fff;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.kick-back {
+  margin-top: 50px;
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+.kick-back .title-kick-back {
+  font-size: 32px;
+  line-height: 1.125;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.kick-back .decs-title-kick-back {
+  margin-bottom: 20px;
+}
+
+.shop-kick-back {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+
+.shop-kick-back .link-item-kick-back {
+  color: #000;
+}
+
+.shop-kick-back .link-item-kick-back .name-kick-back {
+  font-size: 20px;
+  font-weight: 700px;
+  margin-top: 20px;
+}
+
+.shop-kick-back .link-item-kick-back .decs-name-kick-back {
+  font-size: 12px;
+  line-height: 1.333;
+  margin-bottom: 15px;
+}
+
+.shop-kick-back .link-item-kick-back .btn-kick-back {
+  padding: 10px 50px;
+  border: none;
+  background-color: #000;
+  color: #fff;
+}

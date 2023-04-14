@@ -1,0 +1,250 @@
+#header {
+  background: rgb(255, 255, 255);
+  padding: 8px 0px;
+}
+
+.logo-header {
+  margin-right: 48px;
+  flex-basis: unset;
+  width: 57px;
+  height: 40px;
+}
+
+.header-top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.search-header {
+  width: 55%;
+  display: flex;
+  position: relative;
+  justify-content: space-around;
+  border: 1px solid rgb(221, 221, 227);
+  border-radius: 8px;
+  -webkit-box-align: center;
+  align-items: center;
+}
+
+.search-header .icon-search {
+  width: 20px;
+  height: 20px;
+  margin: 0px 0px 0px 18px;
+}
+
+.search-header .input-search {
+  border: 0px;
+  padding: 0px 8px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  outline: none;
+  width: 100%;
+}
+
+.search-header .btn-search {
+  cursor: pointer;
+  border: 0px;
+  width: 92px;
+  height: 38px;
+  padding: 4px;
+  border-radius: 0px 8px 8px 0px;
+  background: transparent;
+  color: rgb(10, 104, 255);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  outline: none;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  position: relative;
+}
+
+.search-header .btn-search:hover {
+  background-color: rgba(10, 104, 255, 0.2);
+}
+
+.search-header .btn-search::before {
+  content: "";
+  display: block;
+  position: absolute;
+  border-left: 1px solid rgb(221, 221, 227);
+  height: 24px;
+  left: 0px;
+  top: 8px;
+}
+
+.user-header {
+  display: flex;
+}
+
+.user-header .item-user {
+  padding: 8px 16px;
+  cursor: pointer;
+  position: relative;
+  border-radius: 8px;
+}
+
+.user-header .item-user .link-user {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  color: rgb(128, 128, 137);
+}
+
+.user-header .item-user:hover {
+  background-color: rgba(39, 39, 42, 0.12);
+}
+
+.user-header .item-user:nth-child(1):hover {
+  background-color: rgba(0, 96, 255, 0.12);
+}
+
+.user-header .item-user:nth-child(1) .link-user {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 150%;
+  color: rgb(10, 104, 255);
+}
+
+.link-user {
+  display: flex;
+  align-items: center;
+}
+
+.user-header .item-user img {
+  width: 24px;
+  height: 24px;
+  margin-right: 4px;
+  border-radius: 50%;
+}
+
+.user-header .item-user.card {
+  position: relative;
+}
+
+.user-header .item-user.card img {
+  margin-right: 0px;
+  border-radius: unset;
+}
+
+.user-header .item-user.card span {
+  color: rgb(255, 255, 255);
+  background: rgb(255, 66, 79);
+  height: 16px;
+  right: 0px;
+  top: -4px;
+  border-radius: 8px;
+  display: inline-block;
+  text-align: center;
+  font-weight: 700;
+  font-size: 10px;
+  line-height: 150%;
+  position: absolute;
+  padding: 0.5px 4px;
+}
+
+.user-header .item-user.card:hover {
+  background-color: rgba(0, 96, 255, 0.12);
+}
+
+.user-header .item-user.card::before {
+  content: "";
+  display: block;
+  height: 20px;
+  position: absolute;
+  left: 0px;
+  border: 1px solid rgb(235, 235, 240);
+}
+
+.header-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 8px;
+  color: rgb(128, 128, 137);
+}
+
+.list-quicklinks {
+  display: flex;
+  height: 24px;
+  /* width: 712px; */
+  margin-left: 160px;
+  margin-top: 8px;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  overflow: hidden;
+}
+
+.list-quicklinks .link-quicklinks {
+  display: block;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  color: rgb(128, 128, 137);
+  margin-right: 12px;
+  white-space: nowrap;
+}
+
+.ship .ship-content {
+  display: flex;
+}
+
+.ship .ship-content img {
+  width: 20px;
+  height: 20px;
+  margin-right: 4px;
+}
+
+.ship .ship-content .title-ship {
+  margin: 0px;
+  display: block;
+  color: rgb(128, 128, 137);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  padding-right: 4px;
+}
+
+.ship .ship-content .address-ship {
+  text-decoration: underline;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 150%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: rgb(39, 39, 42);
+}
+
+.banner-ship {
+  background-color: #ffe880;
+  padding: 8px 16px;
+}
+
+.banner-ship .link-banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: initial;
+}
+.banner-ship .link-banner .img-banner-ship {
+  width: 81px;
+  height: 12px;
+}
+
+.banner-ship .link-banner .title-banner-ship strong {
+  font-size: 14px;
+  line-height: 150%;
+  margin: 0 5px;
+}
+
+.banner-ship .link-banner .right-icon {
+  width: 7px;
+  height: 11px;
+}

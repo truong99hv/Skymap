@@ -1,0 +1,33 @@
+.footer {
+  background-color: #000;
+  z-index: 1000;
+}
+
+.contact {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  padding-top: 40px;
+  padding-bottom: 50px;
+}
+
+.contact .title-contact {
+  color: #fff;
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.list-contact {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.list-contact > ul > li > a {
+  color: #fff;
+  opacity: 0.4;
+  font-size: 14px;
+  line-height: 1.428;
+  font-weight: 400;
+}
