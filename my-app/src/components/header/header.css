@@ -1,0 +1,118 @@
+.header {
+  width: 100%;
+}
+
+.header .header-top {
+  background-color: #ad180d;
+}
+
+.login {
+  width: 100%;
+  height: 56px;
+  position: relative;
+}
+.btn-login {
+  background-color: #ad180d;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  margin: 10px 20px;
+  transition: 0.2s ease-in-out;
+  border-radius: 5px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.btn-login:hover {
+  background-color: #b86e69;
+}
+
+.header-bottom {
+  /* width: 100%; */
+  background-color: #da2a1c;
+}
+
+.header-bottom .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-bottom .logo img {
+  height: 80px;
+}
+
+.box-center {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.box-search {
+  height: 45px;
+  width: 300px;
+  position: relative;
+}
+
+.box-search .input-search {
+  height: 100%;
+  width: 100%;
+  outline: none;
+  padding: 10px;
+}
+
+.box-search .btn-search {
+  position: absolute;
+  right: 0;
+  height: 45px;
+  width: 45px;
+  background-color: #404f5a;
+  border: none;
+  cursor: pointer;
+}
+
+.box-search .btn-search svg path {
+  stroke: #fff;
+}
+
+.icon-search {
+  font-size: 20px;
+}
+
+.advanced {
+  margin-left: 40px;
+}
+
+.advanced > a {
+  color: #fff;
+  font-weight: 600;
+}
+
+.navbar {
+  display: flex;
+  height: 84px;
+}
+
+.navbar .nav-item {
+  height: 100%;
+  font-weight: 700;
+  text-transform: none;
+  font-size: 16px;
+  padding: 0 10px;
+  border-left: 1px solid #fff;
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+}
+
+.navbar .nav-item > a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.navbar .nav-item:last-child {
+  border-right: 1px solid #fff;
+  background-color: rgb(255, 196, 118);
+  border-color: rgb(255, 196, 118);
+}
