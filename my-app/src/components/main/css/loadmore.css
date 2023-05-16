@@ -1,0 +1,15 @@
+.btn-load-more {
+  cursor: pointer;
+  /* text-decoration: underline; */
+  color: #000;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #000;
+  width: 73px;
+  margin: 20px auto;
+  font-weight: bold;
+  transition: 0.8s ease-in-out;
+}
+
+.btn-load-more:hover {
+  color: #9f8282;
+}

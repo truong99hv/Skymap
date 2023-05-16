@@ -1,0 +1,24 @@
+.sidebar {
+  padding: 12px;
+  border-right: 1px solid #cac0ba;
+}
+
+.hr-sidebar {
+  margin: 0;
+}
+
+.title-item-sidebar {
+  display: inline-block;
+  display: flex;
+  width: 100%;
+}
+
+.icon-toggle {
+  margin-right: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.title-item-sidebar {
+  cursor: pointer;
+}
