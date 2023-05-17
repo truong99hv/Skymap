@@ -4,10 +4,10 @@ import { MdTableRows } from "react-icons/md";
 import { IoStatsChart } from "react-icons/io5";
 import { SiMicrosoftexcel } from "react-icons/si";
 import "./css/nav.css";
-import Grid from "./Grid";
-import Table from "./Table";
-import Statistical from "./Statistical";
-import Sidebar from "./Sidebar";
+// import Grid from "./Grid";
+// import Table from "./Table";
+// import Statistical from "./Statistical";
+// import Sidebar from "./Sidebar";
 
 const ListItem = (props) => {
   return (
@@ -40,26 +40,11 @@ const arr = [
   },
 ];
 
-const Navbar = () => {
-  const [activeIndex, setActiveIndex] = useState(0); // create a state for activeIndex
-  const [activeContent, setActiveContent] = useState(0);
-
+const Navbar = ({ onSetTab, api }) => {
+  const [activeIndex, setActiveIndex] = useState(0);
   const handleClick = (index) => {
     setActiveIndex(index);
-    setActiveContent(index);
-  };
-
-  const renderedContent = () => {
-    switch (activeContent) {
-      case 0:
-        return <Grid />;
-      case 1:
-        return <Table />;
-      case 2:
-        return <Statistical />;
-      default:
-        return null;
-    }
+    onSetTab(index);
   };
 
   return (
@@ -90,10 +75,6 @@ const Navbar = () => {
             </button>
           </div>
         </div>
-      </div>
-      <div className="content-wrap container">
-        <Sidebar />
-        {renderedContent()}
       </div>
     </>
   );

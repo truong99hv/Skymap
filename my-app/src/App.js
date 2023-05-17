@@ -7,6 +7,7 @@ import Api from "./data/api";
 function App() {
   const [api, setApi] = useState(Api.str);
   const filter = (api) => {
+    console.log(api);
     setApi(api);
   };
   return (

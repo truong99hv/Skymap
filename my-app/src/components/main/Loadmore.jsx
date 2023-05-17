@@ -3,17 +3,18 @@ import GridItem from "./GridItem";
 import "./css/loadmore.css";
 import { getData } from "../../data/getData";
 
-const Loadmore = () => {
+const Loadmore = (props) => {
   const [visibleItems, setVisibleItems] = useState(1);
+  const [page, setPage] = useState();
   const [items, setItems] = useState([]);
   const [loading, setLoading] = useState(true);
 
   const getLoadMore = async () => {
     setLoading(true);
-
-    const loadMore = await getData(
-      `https://loainguycap.ceid.gov.vn/api/loaicongbo?paginate=true&page=${visibleItems}&perpage=18`
-    );
+    let newPage = "page=" + visibleItems;
+    setPage(newPage);
+    let newApi = props.api.replace("page=1", newPage);
+    const loadMore = await getData(newApi);
     let arrLoadmore = loadMore.list;
     if (arrLoadmore && visibleItems > 1) {
       setItems((prevData) => [...prevData, ...arrLoadmore]);

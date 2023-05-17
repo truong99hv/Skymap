@@ -1,20 +1,29 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./css/sidebar.css";
+import Api from "../../data/api";
 
 const ItemSidebar = (props) => {
-  let { name, valueApi, id } = props;
+  let { name, valueApi, id, api, filter } = props;
+  let filterParams = api;
   const [isChecked, setIsChecked] = useState(false);
+  // const [checkedItems, setCheckedItems] = useState([]);
   const [value, setValue] = useState("");
+  // const [apiFilter, setApiFilter] = useState();
 
   const handleCheckboxChange = (event) => {
+    let content = "";
     setIsChecked(event.target.checked);
+    content = "&loaihientrang_ids[]=" + event.target.value;
     if (event.target.checked) {
       setValue(event.target.value);
-      console.log(value);
+      filterParams += content;
     } else {
       setValue("");
+      filterParams = filterParams.replace(content, "");
     }
+    filter(filterParams);
   };
+
   return (
     <li className="item-sidebar">
       <input
@@ -27,7 +36,6 @@ const ItemSidebar = (props) => {
       />
       <label htmlFor={name}>{name}</label>
       <hr className="hr-sidebar" />
-      <p>value: {value}</p>
     </li>
   );
 };

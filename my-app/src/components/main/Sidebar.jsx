@@ -3,25 +3,18 @@ import { getData } from "../../data/getData";
 import ItemSidebar from "./ItemSidebar";
 import { AiFillCaretRight, AiOutlineCaretDown } from "react-icons/ai";
 import "./css/sidebar.css";
+import Api from "../../data/api";
 
-const Sidebar = () => {
+const Sidebar = (props) => {
   const [items, setItems] = useState([]);
   const [isToggle, setIsToggle] = useState(false);
 
   function handleClickToggle() {
     setIsToggle((prevState) => !prevState);
   }
-  let listApi = [
-    "https://loainguycap.ceid.gov.vn/api/loaihientrangs",
-    "https://loainguycap.ceid.gov.vn/api/provinces",
-    "https://loainguycap.ceid.gov.vn/api/danhmuccha?ma_danh_mucs[]=REDBOOK",
-    "https://loainguycap.ceid.gov.vn/api/danhmuccha?ma_danh_mucs[]=IUCN",
-  ];
 
   const sidebarData = async () => {
-    const arrItemSidebar = await getData(
-      "https://loainguycap.ceid.gov.vn/api/loaihientrangs"
-    );
+    const arrItemSidebar = await getData(Api.loaihientrangs);
     if (arrItemSidebar) {
       setItems(arrItemSidebar);
     } else {
@@ -49,6 +42,8 @@ const Sidebar = () => {
               name={item.ten}
               id={`itemSidebar-${item.id}`}
               valueApi={item.id}
+              filter={props.filter}
+              api={props.api}
             />
           ))}
         </ul>

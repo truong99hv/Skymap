@@ -13,3 +13,7 @@
 .btn-load-more:hover {
   color: #9f8282;
 }
+
+.list-loadmore {
+  margin-top: 20px;
+}
